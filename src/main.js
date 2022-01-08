@@ -6,7 +6,14 @@ import App from './App.vue';
 // THE POINT OF VUES IS THAT YOU DECLEARE AND MUTATE STATE DATA IN ONE PLACE
 // AND YOU USE IT ACROSS ALL ENVIRONMENT
 // THIS GIVES YOU ORDER, SIMPLISITY AND ALLOWS TO AVOID ERRORS BY ACCIDENTALY MANIMULATING SAME DATA ACROSS DIFFERENT PLACES
+// VUEX main components: 
+    // state - declare state data
+    // mutations - manimpulate/change/process state data
+    // actions - same as mutations, but you can use asynchonus code
+    // getters - use getters to render state data instead of renderint directly state data
 
+
+    
 const store = createStore({
     // This is the State data you want to use globally in your app accross all modules
     state() {
