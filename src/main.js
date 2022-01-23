@@ -33,6 +33,8 @@ const store = createStore({
     },
     // ACTIONS ARE ALLOWED TO RUN ASYNCHRONOUS CODE
     // Actions are very simmilar to mutations, but the difference is that in actions you can use asynchronous code
+    // Best practice is to use actions in your app instead of mutations all the time and mutations to use in the acitions
+    // to avoid issues with asynch code execution
     actions: {
         increment(context) {
             setTimeout(() => {
